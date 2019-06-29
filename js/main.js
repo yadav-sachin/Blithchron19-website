@@ -25,4 +25,10 @@ function start()
 
 /*Countdown code ends here*/
 
+$(".logo").hover(function(){
+    $(this).addClass("animated bounce");
+},
+function(){
+    $(this).removeClass("animated bounce");
+});
 $(document).ready(start);
