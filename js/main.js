@@ -16,7 +16,7 @@ function showTime()
         $("#count-units").text(" Days To Go");
         var count = new CountUp('time-left', 365, days, 0, 3, countOptions);
         count.start();
-        // timeLeft.innerText=days + " days Left";
+    
     }
     else if(hours>0)
     {   
@@ -24,8 +24,7 @@ function showTime()
         var count = new CountUp('time-left', 24, hours, 0, 3, countOptions);
         count.start();
     }
-    else timeLeft.innerText="Blith is ON";
-    console.log(timeLeft.innerText);
+    else $("#time-left").text("Blith is ON");
 }
 function start()
 {   

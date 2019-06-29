@@ -7,6 +7,10 @@ Dark green: #28b485
 
 */
 
+html{
+    font-size: 10px;
+}
+
 * {
     margin: 0;
     padding : 0;
@@ -18,10 +22,10 @@ body{
     background-color: rgba(47, 79, 79);
     font-family: "Lato",sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .header{
@@ -35,14 +39,14 @@ body{
 
 .logo-box{
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
     z-index:3;
 }
 
 .logo{
-    margin: 2px 7px;
-    height: 35px;
+    margin: 0.2rem 7rem;
+    height: 3.5rem;
     position:relative;
     z-index:3;
 }
@@ -54,16 +58,16 @@ body{
 
 .heading-primary-main{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 25px;
+    letter-spacing: 2.5rem;
 }
 
 .heading-primary-sub{
     display:block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.7rem;
 }
 
 .text-box{
@@ -90,23 +94,22 @@ body{
 
 .countdown{
     position:absolute;
-    font-size:160px !important;
-    bottom:30px;
-    right:50px;
+    bottom:3rem;
+    right:5rem;
 }
 
 ::-webkit-scrollbar {
-    scroll-margin-right:5px;  
-    width: 15px;
+    scroll-margin-right:0.5rem;  
+    width: 1.5rem;
 }
    
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom,rgba(126, 213, 111, 0.3),rgba(85, 197, 122,0.3));
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-track {
     background: transparent;
-    border-radius:10px;
+    border-radius:1rem;
 }
