@@ -7,13 +7,23 @@ function showTime()
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     console.log(days);
-    var timeLeft=document.getElementById("time-left");
+    var countOptions = {
+        useEasing: true,
+        separator: ''
+      }
     if(days>0)
-    {   
-        timeLeft.innerText=days + " days Left";
+    {       
+        $("#count-units").text(" Days To Go");
+        var count = new CountUp('time-left', 365, days, 0, 3, countOptions);
+        count.start();
+        // timeLeft.innerText=days + " days Left";
     }
     else if(hours>0)
-        timeLeft.innerText=hours+ " hours Left";
+    {   
+        $("#count-units").text(" Hours To Go");
+        var count = new CountUp('time-left', 24, hours, 0, 3, countOptions);
+        count.start();
+    }
     else timeLeft.innerText="Blith is ON";
     console.log(timeLeft.innerText);
 }
@@ -21,14 +31,10 @@ function start()
 {   
     showTime();
     var x= setInterval(showTime,60000);
+    $(".logo").hover(function(){
+        $(this).addClass("animated rubberBand");},function(){
+        $(this).removeClass("animated rubberBand");});
 }
 
 /*Countdown code ends here*/
-
-$(".logo").hover(function(){
-    $(this).addClass("animated bounce");
-},
-function(){
-    $(this).removeClass("animated bounce");
-});
 $(document).ready(start);

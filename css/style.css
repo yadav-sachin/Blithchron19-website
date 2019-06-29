@@ -41,7 +41,7 @@ body{
 }
 
 .logo{
-    margin-top:10px;
+    margin: 2px 7px;
     height: 35px;
     position:relative;
     z-index:3;
@@ -81,7 +81,11 @@ body{
 .minar-image{
     position:absolute;
     bottom: 15%;
-    opacity: 20%;
+    filter: opacity(70%);
+}
+
+.minar-image:hover{
+    filter: opacity(80%);
 }
 
 .countdown{
