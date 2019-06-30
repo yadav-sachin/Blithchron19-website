@@ -1,0 +1,29 @@
+{
+  "name": "blithchron20",
+  "version": "1.0.0",
+  "description": "Website for Blithchron'20 - the annual college fest of IIT Gandhinagar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadav-sachin/Blithchron19-website.git"
+  },
+  "keywords": [
+    "Blithchron",
+    "IIT",
+    "Gandhinagar",
+    "Cultural",
+    "Fest"
+  ],
+  "author": "Sachin Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yadav-sachin/Blithchron19-website/issues"
+  },
+  "homepage": "https://github.com/yadav-sachin/Blithchron19-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
