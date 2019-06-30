@@ -8,13 +8,13 @@ Dark green: #28b485
 */
 
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding : 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     overflow-x: hidden;
 }
 
@@ -26,6 +26,7 @@ body{
     line-height: 1.7;
     color: #777;
     padding: 3rem;
+    box-sizing: border-box;
 }
 
 .header{
@@ -37,14 +38,14 @@ body{
     position: relative;
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top: 4rem;
     left: 4rem;
     z-index:3;
 }
 
-.logo{
+.header__logo{
     margin: 0.2rem 7rem;
     height: 3.5rem;
     position:relative;
@@ -56,21 +57,21 @@ body{
     text-transform: uppercase;
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.5rem;
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display:block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.7rem;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top: 50%;
     left: 55%;
@@ -78,17 +79,17 @@ body{
     text-align: center;
 }
 
-.main-row{
+.header__main-row{
     height:100%;
 }
 
-.minar-image{
+.header__minar-image{
     position:absolute;
     bottom: 15%;
     filter: opacity(70%);
 }
 
-.minar-image:hover{
+.header__minar-image:hover{
     filter: opacity(80%);
 }
 
@@ -98,6 +99,10 @@ body{
     right:5rem;
 }
 
+
+/**************************
+Scrollbars
+********************/
 ::-webkit-scrollbar {
     scroll-margin-right:0.5rem;  
     width: 1.5rem;
@@ -112,4 +117,33 @@ body{
 ::-webkit-scrollbar-track {
     background: transparent;
     border-radius:1rem;
+}
+
+/*******************************
+About US
+*********************************/
+.about-us{
+    margin-top: 5rem;
+}
+.about-us__heading{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.about-us__video{
+    width: 56rem;
+    height: 31.5rem;
+}
+
+.about-us__description{
+    height: 31.5rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.about-us__description-text{
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
 }

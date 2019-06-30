@@ -30,7 +30,7 @@ function start()
 {   
     showTime();
     var x= setInterval(showTime,60000);
-    $(".logo").hover(function(){
+    $(".header__logo").hover(function(){
         $(this).addClass("animated rubberBand");},function(){
         $(this).removeClass("animated rubberBand");});
 }
