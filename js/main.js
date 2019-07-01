@@ -33,6 +33,10 @@ function start()
     $(".header__logo").hover(function(){
         $(this).addClass("animated rubberBand");},function(){
         $(this).removeClass("animated rubberBand");});
+    $(".navigation__button").click( function() { 
+        $(".navigation").toggleClass("navigation--overlay");
+        $(".navigation__icon").toggleClass("navigation__icon--overlay");
+    });
 }
 
 /*Countdown code ends here*/

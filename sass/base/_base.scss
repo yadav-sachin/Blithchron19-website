@@ -9,15 +9,6 @@ html{
     overflow-x: hidden;
 }
 
-body{
-    background-color: $color-background;
-    font-family: "Lato",sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-grey-dark;
-    padding: 3rem;
-    box-sizing: border-box;
-}
 
 ::-webkit-scrollbar {
     scroll-margin-right:0.5rem;  

@@ -1,0 +1,119 @@
+.navigation{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-image: linear-gradient(to bottom right,rgba(255, 14, 72,0.8),rgba(233, 151, 135,0.8)), url("https://media.gettyimages.com/photos/indian-bollywood-actor-and-singer-ayushmann-khurrana-takes-part-in-picture-id904677372?s=2048x2048");
+    background-size:cover;
+    background-position: top;
+    opacity: 0;
+    transition: height 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &--overlay{
+        width: 100%;
+        height: 100vh;
+        opacity:1;
+    }
+
+    &__button{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-color: rgba($color-white, 0.8);
+        z-index: 1000;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    &__list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    &__item{
+        margin: 1rem;
+    }
+
+    &__link{
+        &:link, &:visited{
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 400;
+        color: rgba($color-white,0.6);
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        }
+
+        &:hover{
+            transform: translateY(-0.5rem);
+            transition: all 0.4s;
+        }
+        &:after{
+            content: "";
+            display: block;
+            height: 0.3rem;
+            position: absolute;
+            background-color: rgba($color-white,0.6);
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            transition: width 0.4s ease 0s, left 0.4s ease 0s;
+        }
+
+        &:hover:after{
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    //ICON
+    &__icon{
+        position: relative;
+        margin-top: 3rem;
+
+        &,
+        &::before,
+        &::after{
+        display: inline-block;
+        overflow-x: visible;
+        width: 3rem;
+        height: 2px;
+        background-color: $color-background;
+        transition: all 0.6s 0.2s;
+        }
+        
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+        }
+
+        &::before{ top: -0.8rem; }
+        &::after{ top: 0.8rem; }
+
+        &--overlay{
+            background-color: transparent;
+            &::before{
+                top:0;
+                transform: rotate(45deg);
+            }
+
+            &::after{
+                top:0;
+                transform: rotate(-45deg);
+            }
+
+        }
+    }
+}
+
