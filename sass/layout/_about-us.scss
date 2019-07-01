@@ -1,0 +1,26 @@
+.about-us{
+    margin-top: 5rem;
+
+    &__heading{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    
+    &__video{
+        width: 56rem;
+        height: 31.5rem;
+    }
+    
+    &__description{
+        height: 31.5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+    
+    &__description-text{
+        position: absolute;
+        top : 50%;
+        transform: translateY(-50%);
+    }
+}

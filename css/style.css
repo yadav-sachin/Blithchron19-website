@@ -1,149 +1,105 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
-html{
-    font-size: 62.5%;
-}
+html {
+  font-size: 62.5%; }
 
 *, *::before, *::after {
-    margin: 0;
-    padding : 0;
-    box-sizing: inherit;
-    overflow-x: hidden;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  overflow-x: hidden; }
 
-body{
-    background-color: rgba(47, 79, 79);
-    font-family: "Lato",sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: #777;
-    padding: 3rem;
-    box-sizing: border-box;
-}
+body {
+  background-color: darkslategray;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box; }
 
-.header{
-    height: 95vh;
-    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.8),rgba(85, 197, 122,0.8)) , url("../img/hero.jpg");
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0,100% 0, 100% 75vh ,0 100%);
-    position: relative;
-}
+::-webkit-scrollbar {
+  scroll-margin-right: 0.5rem;
+  width: 1.5rem; }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgba(40, 180, 133, 0.3), rgba(126, 213, 111, 0.3));
+    border-radius: 1rem; }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 1rem; }
 
-.header__logo-box{
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    z-index:3;
-}
+body {
+  background-color: darkslategray;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box; }
 
-.header__logo{
-    margin: 0.2rem 7rem;
-    height: 3.5rem;
-    position:relative;
-    z-index:3;
-}
-
-.heading-primary{
-    color:white;
-    text-transform: uppercase;
-}
-
-.heading-primary--main{
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase; }
+  .heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 2.5rem;
-}
-
-.heading-primary--sub{
-    display:block;
+    letter-spacing: 2.5rem; }
+  .heading-primary--sub {
+    display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.7rem;
-}
+    letter-spacing: 1.7rem; }
 
-.header__text-box{
+.about-us {
+  margin-top: 5rem; }
+  .about-us__heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 6rem; }
+  .about-us__video {
+    width: 56rem;
+    height: 31.5rem; }
+  .about-us__description {
+    height: 31.5rem;
+    font-size: 2rem;
+    position: relative; }
+  .about-us__description-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 3; }
+  .header__logo {
+    margin: 0.2rem 7rem;
+    height: 3.5rem;
+    position: relative;
+    z-index: 3; }
+  .header__text-box {
     position: absolute;
     top: 50%;
     left: 55%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-
-.header__main-row{
-    height:100%;
-}
-
-.header__minar-image{
-    position:absolute;
-    bottom: 15%;
-    filter: opacity(70%);
-}
-
-.header__minar-image:hover{
-    filter: opacity(80%);
-}
-
-.countdown{
-    position:absolute;
-    bottom:3rem;
-    right:5rem;
-}
-
-
-/**************************
-Scrollbars
-********************/
-::-webkit-scrollbar {
-    scroll-margin-right:0.5rem;  
-    width: 1.5rem;
-}
-   
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom,rgba(126, 213, 111, 0.3),rgba(85, 197, 122,0.3));
-    border-radius: 1rem;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius:1rem;
-}
-
-/*******************************
-About US
-*********************************/
-.about-us{
-    margin-top: 5rem;
-}
-.about-us__heading{
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 6rem;
-}
-
-.about-us__video{
-    width: 56rem;
-    height: 31.5rem;
-}
-
-.about-us__description{
-    height: 31.5rem;
-    font-size: 2rem;
-    position: relative;
-}
-
-.about-us__description-text{
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__main-row {
+    height: 100%; }
+  .header__minar-image {
     position: absolute;
-    top : 50%;
-    transform: translateY(-50%);
-}
+    bottom: 15%;
+    filter: opacity(70%); }
+  .header__minar-image:hover {
+    filter: opacity(80%); }
+
+.countdown {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem; }
