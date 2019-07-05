@@ -7,10 +7,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Animate.CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+        <!-- Lato font -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-
-        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+        <!-- Fontawesome personal kit -->
+        <script src="https://kit.fontawesome.com/38fff33c34.js"></script>
+        <!-- Custom CSS and icon -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -18,6 +19,7 @@
     </head>
     <body>
         
+        <!-- Navigation menu -->
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
@@ -29,18 +31,20 @@
             </ul>
         </nav>
 
+        <!-- Navigation Button at top right-->
         <div class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </div>
 
+        <!-- Header section -->
         <header class="header container-fluid">
-            <!--This is the Blithchron Logo Here at top-right-->
+            <!--Blith Logo at top left-->
             <div class="header__logo-box">
                 <a  href="#">
                     <img src="img/logo-white.png" class="header__logo" alt="Blithchron-Logo">
                 </a>
             </div>
-
+            <!-- Header text and minar image -->
             <div class="row header__main-row">
                 <div class="col-10">
                     <div class="header__text-box">
@@ -56,6 +60,12 @@
             </div>
         </header>
 
+        <!-- Countdown at bottom right -->
+        <div class="countdown">
+            <h2><span id="time-left">Time</span> <span id="count-units"></span></h2>
+        </div>
+
+        <!-- About us section -->
         <section class="about-us container">
             <h2 class="about-us__heading">ABOUT US</h2>
             <div class="row about-us__content">
@@ -69,9 +79,38 @@
                 </div>
             </div>
         </section>
-        <div class="countdown">
-            <h2><span id="time-left">Time</span> <span id="count-units"></span></h2>
-        </div>
+
+        <!-- Pronites-intro section -->
+        <section class="pronites-intro container-fluid">
+            <h2 class="pronites-intro__heading">PRONITES</h2>
+            <div class="row pronites-intro__content">
+                <div class="col-12 pronites-intro__description">
+                    <p class="pronites-intro__description-text"> 
+                        Discover the two nights where the DJ, the location and the crowd create the perfect setting for an incredible experience.
+                    </p>
+                </div>
+            </div>
+            <div class="pronites-intro__button btn btn-outline-light mx-auto">Go To Pronites</div>
+        </section>
+
+        <!-- Blith-MUN section -->
+        <section class="blith-mun container">
+                <h2 class="blith-mun__heading">Blith MUN</h2>
+                <div class="row blith-mun__content">
+                    <div class="col-lg-7 blith-mun__description">
+                        <p class="blith-mun__description-text"> 
+                            Model United Nations also known as MUN is an academic competition which works on the real life model of United Nations. We at IITGn are hosting the first edition of BlithMUN in Blithchron'17.</p>
+                        <div class="blith-mun__button btn btn-outline-light mx-auto">Go To BlithMUN</div>
+                        <div class="blith-mun__fb-button btn btn-outline-light mx-auto"><span class="blith-mun__fb-logo"><i class="fab fa-facebook-square"></i> Facebook Page</span></div>
+                    </div>
+                    <div class="col-lg-5 blith-mun__image-container">
+                        <img class="blith-mun__image" src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-1/p720x720/14955805_234706426948833_6614731969619469093_n.jpg?_nc_cat=101&_nc_oc=AQnowBVabdpWyx1hxYjxaVrOIFlPPzkwc7whu3HtLBRVNb3CpQGQBc-dpkl9D_fx3rA&_nc_ht=scontent.fdel1-2.fna&oh=cd454a643359a1833c84cf8aa824218d&oe=5DC1E4C4" alt="Blith-MUN logo">
+                    </div>
+                </div>
+        </section>
+
+        <!-- Events Section -->
+        
 
     <!-- Scripts     -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

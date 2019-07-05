@@ -5,7 +5,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 100vw !important; }
 
 ::-webkit-scrollbar {
   scroll-margin-right: 0.5rem;
@@ -39,56 +40,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.7rem; }
-
-.about-us {
-  margin-top: 5rem; }
-  .about-us__heading {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 6rem; }
-  .about-us__video {
-    width: 56rem;
-    height: 31.5rem; }
-  .about-us__description {
-    height: 31.5rem;
-    font-size: 2rem;
-    position: relative; }
-  .about-us__description-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    z-index: 3; }
-  .header__logo {
-    margin: 0.2rem 7rem;
-    height: 3.5rem;
-    position: relative;
-    z-index: 3; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__main-row {
-    height: 100%; }
-  .header__minar-image {
-    position: absolute;
-    bottom: 15%;
-    filter: opacity(70%); }
-  .header__minar-image:hover {
-    filter: opacity(80%); }
 
 .navigation {
   width: 100%;
@@ -175,6 +126,97 @@ body {
       .navigation__icon--overlay::after {
         top: 0;
         transform: rotate(-45deg); }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 3; }
+  .header__logo {
+    margin: 0.2rem 7rem;
+    height: 3.5rem;
+    position: relative;
+    z-index: 3; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__main-row {
+    height: 100%; }
+  .header__minar-image {
+    position: absolute;
+    bottom: 15%;
+    filter: opacity(70%); }
+  .header__minar-image:hover {
+    filter: opacity(80%); }
+
+.about-us {
+  margin-top: 5rem; }
+  .about-us__heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 6rem; }
+  .about-us__video {
+    width: 56rem;
+    height: 31.5rem; }
+  .about-us__description {
+    height: 31.5rem;
+    font-size: 2rem;
+    position: relative; }
+  .about-us__description-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.pronites-intro {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("https://blithchron.iitgn.ac.in/images/home/pronites%20web.jpg");
+  background-size: cover;
+  height: 80vh;
+  text-align: center;
+  padding-top: 9rem;
+  transform: skewY(-7deg);
+  color: white;
+  position: relative; }
+  .pronites-intro__heading {
+    transform: skewY(7deg);
+    margin-top: 1rem;
+    margin-bottom: 6rem; }
+  .pronites-intro__content {
+    transform: skewY(7deg); }
+  .pronites-intro__description-text {
+    font-size: 2rem; }
+  .pronites-intro__button {
+    font-size: 2rem;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: skewY(7deg) translateX(-50%); }
+
+.blith-mun {
+  margin-top: 5rem; }
+  .blith-mun__heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 6rem; }
+  .blith-mun__image {
+    width: 32rem; }
+  .blith-mun__description {
+    font-size: 2rem;
+    position: relative; }
+  .blith-mun__button, .blith-mun__fb-button {
+    font-size: 2rem; }
 
 .countdown {
   position: absolute;

@@ -1,0 +1,35 @@
+.pronites-intro{
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8),rgba($color-primary-dark,0.8)) , url("https://blithchron.iitgn.ac.in/images/home/pronites%20web.jpg");
+    background-size: cover;
+    height: 80vh;
+    text-align:center;
+    padding-top: 9rem;
+    transform: skewY(-7deg);
+    color: white;
+    position: relative;
+
+    &__heading{
+        transform: skewY(7deg);
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    
+    &__content{
+        transform: skewY(7deg);
+    }
+
+    &__description-text{
+        font-size: 2rem;
+    }
+
+    &__button{
+        font-size: 2rem;
+        border: 1px solid white;
+        position: absolute;
+        bottom : 20%;
+        left: 50%;
+        transform: skewY(7deg) translateX(-50%);
+    }
+}

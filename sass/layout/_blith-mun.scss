@@ -1,0 +1,23 @@
+.blith-mun{
+    margin-top: 5rem;
+
+    &__heading{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    
+    &__image{
+        width: 32rem;
+    }
+    
+    &__description{
+        font-size: 2rem;
+        position: relative;
+    }
+
+    &__button, &__fb-button{
+        font-size: 2rem;
+    }
+
+}
