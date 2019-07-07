@@ -1,0 +1,21 @@
+.events-intro{
+    margin-top: 5rem;
+    background-image: url("https://blithchron.iitgn.ac.in/images/home/panache.jpg");
+    height: 70vh;
+
+    &__heading{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    
+    &__description{
+        font-size: 2rem;
+        position: relative;
+    }
+
+    &__button{
+        font-size: 2rem;
+    }
+    
+}

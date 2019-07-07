@@ -1,6 +1,6 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-background: rgb(47, 79, 79);
+$color-primary: #ea5455;
+$color-primary-light: lighten($color-primary,20%);
+$color-primary-dark: darken($color-primary,20%);
+$color-background: #2d4059;
 $color-grey-dark: #777;
 $color-white: #fff;
