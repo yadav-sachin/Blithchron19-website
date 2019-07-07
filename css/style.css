@@ -34,6 +34,20 @@ html {
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B; } }
 
+@keyframes shake {
+  0% {
+    transform: skewX(-15deg); }
+  5% {
+    transform: skewX(15deg); }
+  10% {
+    transform: skewX(-15deg); }
+  15% {
+    transform: skewX(15deg); }
+  20% {
+    transform: skewX(0deg); }
+  100% {
+    transform: skewX(0deg); } }
+
 body {
   background-color: #2d4059;
   font-family: "Lato",sans-serif;
@@ -48,23 +62,24 @@ body {
   font-family: 'Fjalla One', sans-serif;
   transform: skewY(-3deg);
   display: block;
-  float: left;
   text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; }
   .heading-primary--main {
     display: block;
-    font-size: 6vw;
+    font-size: 8vw;
     font-weight: 900;
-    letter-spacing: 2.5vw;
+    letter-spacing: 2vw;
     color: #FFDD1B;
-    z-index: 100; }
+    z-index: 100;
+    float: left; }
     .heading-primary--main:hover {
       animation: neon3 1.5s ease-in-out infinite alternate; }
   .heading-primary--sub {
     display: block;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 700;
     letter-spacing: 0.8vw;
-    color: #d6eb19; }
+    color: #96f7d2;
+    text-align: center; }
 
 .navigation {
   width: 100%;
@@ -172,7 +187,7 @@ body {
   .header__text-box {
     position: absolute;
     top: 45%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
   .header__main-row {
@@ -181,10 +196,8 @@ body {
     position: absolute;
     bottom: 10%;
     right: 10%;
-    filter: opacity(70%);
+    filter: opacity(60%);
     z-index: -1; }
-  .header__minar-image:hover {
-    filter: opacity(80%); }
 
 .about-us {
   margin-top: 5rem; }

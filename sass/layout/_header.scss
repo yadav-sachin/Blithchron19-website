@@ -23,7 +23,7 @@
     &__text-box{
         position: absolute;
         top: 45%;
-        left: 55%;
+        left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
     }
@@ -36,12 +36,8 @@
         position:absolute;
         bottom: 10%;
         right: 10%;
-        filter: opacity(70%);
+        filter: opacity(60%);
         z-index: -1;
-    }
-    
-    &__minar-image:hover{
-        filter: opacity(80%);
     }
     
 }
