@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Quando);
 .navigation{
     width: 0;
+    font-family: Quando;
     height: 100%;
     position: fixed;
     top: 0;
@@ -66,35 +68,35 @@
         &:link, &:visited{
         display: inline-block;
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 300;
         color: rgba($color-white,0.6);
         text-decoration: none;
-        text-transform: uppercase;
+        text-transform: capitalize;
         position: relative;
         transition: 0.3s;
         }
 
         &:hover{
-            transform: translateY(-0.5rem);
             transition: all 0.4s;
         }
         &:before{
             content: "";
-            display: block;
-            height: 0.3rem;
+            background: rgba(lighten($color-background,10%),0.5);
             position: absolute;
-            background-color: rgba($color-white,0.6);
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            visibility: hidden;
+            width: 110%;
+            height: 0.5rem;
+            bottom: 10%;
+            left: -5%;
+            border-radius: 5px;
             transform: scaleX(0);
-            transition: all ease 0.3s;
+            animation: 1.4s forwards no-hover-v linear;
+            animation-fill-mode: forwards;
+            z-index: -1;
         }
 
         &:hover:before{
-            transform: scaleX(1);
-            visibility: visible;
+        animation: .5s forwards hover-v linear;
+        animation-fill-mode: forwards;
         }
     }
 

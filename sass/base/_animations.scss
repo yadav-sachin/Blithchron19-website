@@ -40,3 +40,38 @@
   0% {background-position: 0 0}
   0% {background-position: 100% -100%}
   }
+
+// for animating nav-links hover
+@keyframes hover-v {
+  0% {
+      transform: scaleX(0);
+      height: 0.5rem;
+     }
+  45% {   
+      transform: scaleX(1.05);
+      height: 0.5rem;
+     }
+  55% {height: 0.5rem;}
+  100% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+}
+@keyframes no-hover-v {
+  0% {
+      transform: scaleX(1.05);
+      height: 4rem;
+     }
+  45% {height: 0.5rem;}
+  55% {   
+      transform: scaleX(1.05);
+      height: 0.5rem;
+      opacity: 1;
+     }
+  
+  100% {
+      transform: scaleX(0);
+      height: 0.5rem;
+      opacity: .02;
+     }
+}

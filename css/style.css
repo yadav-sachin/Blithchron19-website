@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Quando);
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -76,6 +77,34 @@ body {
   0% {
     background-position: 100% -100%; } }
 
+@keyframes hover-v {
+  0% {
+    transform: scaleX(0);
+    height: 0.5rem; }
+  45% {
+    transform: scaleX(1.05);
+    height: 0.5rem; }
+  55% {
+    height: 0.5rem; }
+  100% {
+    transform: scaleX(1.05);
+    height: 3.8rem; } }
+
+@keyframes no-hover-v {
+  0% {
+    transform: scaleX(1.05);
+    height: 4rem; }
+  45% {
+    height: 0.5rem; }
+  55% {
+    transform: scaleX(1.05);
+    height: 0.5rem;
+    opacity: 1; }
+  100% {
+    transform: scaleX(0);
+    height: 0.5rem;
+    opacity: .02; } }
+
 .heading-primary {
   text-transform: uppercase;
   font-family: 'Fjalla One', sans-serif;
@@ -135,6 +164,7 @@ body {
 
 .navigation {
   width: 0;
+  font-family: Quando;
   height: 100%;
   position: fixed;
   top: 0;
@@ -183,30 +213,30 @@ body {
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 300;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     position: relative;
     transition: 0.3s; }
   .navigation__link:hover {
-    transform: translateY(-0.5rem);
     transition: all 0.4s; }
   .navigation__link:before {
     content: "";
-    display: block;
-    height: 0.3rem;
+    background: rgba(62, 88, 123, 0.5);
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
+    width: 110%;
+    height: 0.5rem;
+    bottom: 10%;
+    left: -5%;
+    border-radius: 5px;
     transform: scaleX(0);
-    transition: all ease 0.3s; }
+    animation: 1.4s forwards no-hover-v linear;
+    animation-fill-mode: forwards;
+    z-index: -1; }
   .navigation__link:hover:before {
-    transform: scaleX(1);
-    visibility: visible; }
+    animation: .5s forwards hover-v linear;
+    animation-fill-mode: forwards; }
   .navigation__icon {
     position: relative;
     margin-top: 3rem; }
