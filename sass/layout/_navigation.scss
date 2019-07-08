@@ -1,20 +1,38 @@
 .navigation{
-    width: 100%;
-    height: 0;
+    width: 0;
+    height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 500;
-    background-image: linear-gradient(to bottom right,rgba(255, 14, 72,0.8),rgba(233, 151, 135,0.8)), url("https://media.gettyimages.com/photos/indian-bollywood-actor-and-singer-ayushmann-khurrana-takes-part-in-picture-id904677372?s=2048x2048");
-    background-size:cover;
-    background-position: top;
+    // background-image: linear-gradient(to bottom right,rgba(255, 14, 72,0.8),rgba(233, 151, 135,0.8)), url("https://media.gettyimages.com/photos/indian-bollywood-actor-and-singer-ayushmann-khurrana-takes-part-in-picture-id904677372?s=2048x2048");
+    // background-size:cover;
+    // background-position: top;
+    background: darken($color-background,10%);
     opacity: 0;
-    transition: height 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    overflow-x: hidden;
+    transition: width 0.8s ease-in-out, opacity 0.8s ease-in-out;
 
     &--overlay{
-        width: 100%;
+        width: 25%;
         height: 100vh;
         opacity:1;
+        @include desktop-respond(lg)
+        {
+            width: 35%;
+        }
+        @include desktop-respond(md)
+        {
+            width: 45%;
+        }
+        @include desktop-respond(sm)
+        {
+            width: 55%;
+        }
+        @include desktop-respond(xs)
+        {
+            width: 65%;
+        }
     }
 
     &__button{
@@ -24,7 +42,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-color: rgba($color-white, 0.8);
+        background-color: rgba(darken($color-background,20%), 0.3);
         z-index: 1000;
         text-align: center;
         cursor: pointer;
@@ -41,7 +59,7 @@
     }
 
     &__item{
-        margin: 1rem;
+        margin: 1.5rem;
     }
 
     &__link{
@@ -53,27 +71,30 @@
         text-decoration: none;
         text-transform: uppercase;
         position: relative;
+        transition: 0.3s;
         }
 
         &:hover{
             transform: translateY(-0.5rem);
             transition: all 0.4s;
         }
-        &:after{
+        &:before{
             content: "";
             display: block;
             height: 0.3rem;
             position: absolute;
             background-color: rgba($color-white,0.6);
             bottom: 0;
-            left: 50%;
-            width: 0;
-            transition: width 0.4s ease 0s, left 0.4s ease 0s;
+            left: 0;
+            width: 100%;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all ease 0.3s;
         }
 
-        &:hover:after{
-            width: 100%;
-            left: 0;
+        &:hover:before{
+            transform: scaleX(1);
+            visibility: visible;
         }
     }
 
@@ -89,7 +110,7 @@
         overflow-x: visible;
         width: 3rem;
         height: 2px;
-        background-color: $color-background;
+        background-color: rgba(white,0.6);
         transition: all 0.6s 0.2s;
         }
         

@@ -134,21 +134,32 @@ body {
   text-align: center; }
 
 .navigation {
-  width: 100%;
-  height: 0;
+  width: 0;
+  height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 500;
-  background-image: linear-gradient(to bottom right, rgba(255, 14, 72, 0.8), rgba(233, 151, 135, 0.8)), url("https://media.gettyimages.com/photos/indian-bollywood-actor-and-singer-ayushmann-khurrana-takes-part-in-picture-id904677372?s=2048x2048");
-  background-size: cover;
-  background-position: top;
+  background: #1c2837;
   opacity: 0;
-  transition: height 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  overflow-x: hidden;
+  transition: width 0.8s ease-in-out, opacity 0.8s ease-in-out; }
   .navigation--overlay {
-    width: 100%;
+    width: 25%;
     height: 100vh;
     opacity: 1; }
+    @media (max-width: 1199.98px) {
+      .navigation--overlay {
+        width: 35%; } }
+    @media (max-width: 991.98px) {
+      .navigation--overlay {
+        width: 45%; } }
+    @media (max-width: 767.98px) {
+      .navigation--overlay {
+        width: 55%; } }
+    @media (max-width: 575.98px) {
+      .navigation--overlay {
+        width: 65%; } }
   .navigation__button {
     height: 6rem;
     width: 6rem;
@@ -156,7 +167,7 @@ body {
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(11, 15, 21, 0.3);
     z-index: 1000;
     text-align: center;
     cursor: pointer; }
@@ -168,7 +179,7 @@ body {
     text-align: center;
     list-style-type: none; }
   .navigation__item {
-    margin: 1rem; }
+    margin: 1.5rem; }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 3rem;
@@ -176,23 +187,26 @@ body {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     text-transform: uppercase;
-    position: relative; }
+    position: relative;
+    transition: 0.3s; }
   .navigation__link:hover {
     transform: translateY(-0.5rem);
     transition: all 0.4s; }
-  .navigation__link:after {
+  .navigation__link:before {
     content: "";
     display: block;
     height: 0.3rem;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.6);
     bottom: 0;
-    left: 50%;
-    width: 0;
-    transition: width 0.4s ease 0s, left 0.4s ease 0s; }
-  .navigation__link:hover:after {
+    left: 0;
     width: 100%;
-    left: 0; }
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all ease 0.3s; }
+  .navigation__link:hover:before {
+    transform: scaleX(1);
+    visibility: visible; }
   .navigation__icon {
     position: relative;
     margin-top: 3rem; }
@@ -201,7 +215,7 @@ body {
       overflow-x: visible;
       width: 3rem;
       height: 2px;
-      background-color: #2d4059;
+      background-color: rgba(255, 255, 255, 0.6);
       transition: all 0.6s 0.2s; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
