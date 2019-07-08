@@ -6,22 +6,22 @@
     }
 
     // Small devices (landscape phones, 576px and up)
-    @if $breakpoint == sm {
+    @else if $breakpoint == sm {
         @media (min-width: 576px) { @content };
     }
 
     // Medium devices (tablets, 768px and up)
-    @if $breakpoint == md {
+    @else if $breakpoint == md {
         @media (min-width: 768px) { @content };
     }
 
     // Large devices (desktops, 992px and up)
-    @if $breakpoint == lg {
+    @else if $breakpoint == lg {
         @media (min-width: 992px) { @content };
     }
 
     // Extra large devices (large desktops, 1200px and up)
-    @if $breakpoint == xl {
+    @else if $breakpoint == xl {
         @media (min-width: 1200px) { @content };
     }
 }
@@ -29,22 +29,22 @@
 @mixin desktop-respond($breakpoint){
 
     // Extra small devices (portrait phones, less than 576px)
-    @if $breakpoint = xs {
+    @if $breakpoint == xs {
     @media (max-width: 575.98px) { @content };
     }
 
     // Small devices (landscape phones, less than 768px)
-    @if $breakpoint = sm {
+    @else if $breakpoint == sm {
     @media (max-width: 767.98px) { @content };
     }
 
     // Medium devices (tablets, less than 992px)
-    @if $breakpoint = md {
+    @else if $breakpoint == md {
     @media (max-width: 991.98px) { @content };
     }
 
     // Large devices (desktops, less than 1200px)
-    @if $breakpoint = lg {
+    @else if $breakpoint == lg {
     @media (max-width: 1199.98px) {@content  };
     }
 

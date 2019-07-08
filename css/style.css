@@ -5,18 +5,27 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 575.98px) {
-    html {
-      font-size: 60%; } }
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     html {
       font-size: 60%; } }
   @media (max-width: 991.98px) {
     html {
-      font-size: 60%; } }
-  @media (max-width: 1199.98px) {
+      font-size: 56%; } }
+  @media (max-width: 767.98px) {
     html {
-      font-size: 60%; } }
+      font-size: 52%; } }
+  @media (max-width: 767.98px) {
+    html {
+      font-size: 48%; } }
+
+body {
+  background-color: #2d4059;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 2rem;
+  box-sizing: border-box; }
 
 ::-webkit-scrollbar {
   scroll-margin-right: 0.5rem;
@@ -34,6 +43,18 @@ html {
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B; } }
 
+@keyframes blink {
+  40% {
+    opacity: 1; }
+  42% {
+    opacity: 0.8; }
+  43% {
+    opacity: 1; }
+  45% {
+    opacity: 0.2; }
+  46% {
+    opacity: 1; } }
+
 @keyframes shake {
   0% {
     transform: skewX(-15deg); }
@@ -47,15 +68,6 @@ html {
     transform: skewX(0deg); }
   100% {
     transform: skewX(0deg); } }
-
-body {
-  background-color: #2d4059;
-  font-family: "Lato",sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
 
 .heading-primary {
   text-transform: uppercase;
@@ -71,8 +83,6 @@ body {
     color: #FFDD1B;
     z-index: 100;
     float: left; }
-    .heading-primary--main:hover {
-      animation: neon3 1.5s ease-in-out infinite alternate; }
   .heading-primary--sub {
     display: block;
     font-size: 3vw;
@@ -80,6 +90,9 @@ body {
     letter-spacing: 0.8vw;
     color: #96f7d2;
     text-align: center; }
+
+.neon-title {
+  animation: neon3 1.5s ease-in-out infinite alternate, blink 3s infinite alternate; }
 
 .navigation {
   width: 100%;
@@ -177,10 +190,10 @@ body {
   .header__logo-box {
     position: absolute;
     top: 4rem;
-    left: 4rem;
+    left: 3rem;
     z-index: 3; }
   .header__logo {
-    margin: 0.2rem 7rem;
+    margin: 0.2rem 3rem;
     height: 3.5rem;
     position: relative;
     z-index: 3; }

@@ -39,6 +39,7 @@ function start()
         $(".navigation").toggleClass("navigation--overlay");
         $(".navigation__icon").toggleClass("navigation__icon--overlay");
     });
+    setTimeout(function(){ $(".heading-primary--main").addClass("neon-title"); }, 3000);
 }
 
 /*Countdown code ends here*/
