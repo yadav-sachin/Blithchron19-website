@@ -1,10 +1,10 @@
 //for title text Blithchron 20
 @keyframes neon3 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+    text-shadow: 0 0 1rem #fff, 0 0 2rem #fff, 0 0 3rem #fff, 0 0 4rem #FFDD1B, 0 0 7rem #FFDD1B, 0 0 8rem #FFDD1B, 0 0 10rem #FFDD1B, 0 0 15rem #FFDD1B;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+    text-shadow: 0 0 0.5rem #fff, 0 0 1rem #fff, 0 0 1.5rem #fff, 0 0 2rem #FFDD1B, 0 0 3.5rem #FFDD1B, 0 0 4rem #FFDD1B, 0 0 5rem #FFDD1B, 0 0 7.5rem #FFDD1B;
   }
 }
 //again for title text blithchron 20
@@ -35,3 +35,8 @@
   20% { transform: skewX(0deg); }
   100% { transform: skewX(0deg); }  
 }
+// for secondary-headings
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }

@@ -1,0 +1,23 @@
+.countdown{
+    position:absolute;
+    bottom:3rem;
+    right:5rem;
+    font-size: 3rem;
+    
+    & p{
+        color: white;
+        display: inline-block;
+        background-size: 120% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        background-image: linear-gradient(45deg, 
+                            #FF1361,
+                            #FFF800);
+    }
+}
+
+.countdown-shake {
+    animation: .8s shake infinite alternate;
+}

@@ -40,6 +40,7 @@ function start()
         $(".navigation__icon").toggleClass("navigation__icon--overlay");
     });
     setTimeout(function(){ $(".heading-primary--main").addClass("neon-title"); }, 3000);
+    setTimeout(function(){ $(".countdown p").addClass("countdown-shake"); }, 3500);
 }
 
 /*Countdown code ends here*/

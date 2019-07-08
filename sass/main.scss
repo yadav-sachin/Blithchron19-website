@@ -17,9 +17,6 @@
 @import "layout/blith-mun";
 @import "layout/events-intro";
 
-.countdown{
-    position:absolute;
-    bottom:3rem;
-    right:5rem;
-}
+@import "components/countdown-timer";
+
 
