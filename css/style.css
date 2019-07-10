@@ -467,6 +467,8 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.2rem;
   color: white; }
+  .skew-button :focus {
+    outline: 0 !important; }
   .skew-button > span {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
