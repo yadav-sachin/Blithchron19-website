@@ -173,7 +173,7 @@ body {
   background: #1c2837;
   opacity: 0;
   overflow-x: hidden;
-  transition: width 0.8s ease-in-out, opacity 0.8s ease-in-out; }
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out; }
   .navigation--overlay {
     width: 25%;
     height: 100vh;
@@ -231,11 +231,11 @@ body {
     left: -5%;
     border-radius: 5px;
     transform: scaleX(0);
-    animation: 1.4s forwards no-hover-v linear;
+    animation: 0.4s forwards no-hover-v linear;
     animation-fill-mode: forwards;
     z-index: -1; }
   .navigation__link:hover:before {
-    animation: .5s forwards hover-v linear;
+    animation: .4s forwards hover-v linear;
     animation-fill-mode: forwards; }
   .navigation__icon {
     position: relative;
