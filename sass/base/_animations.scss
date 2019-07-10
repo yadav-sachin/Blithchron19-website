@@ -1,4 +1,4 @@
-//for title text Blithchron 20
+//for title text Blithchron 20-----------------------------------------------------------------------
 @keyframes neon3 {
   from {
     text-shadow: 0 0 1rem #fff, 0 0 2rem #fff, 0 0 3rem #fff, 0 0 4rem #FFDD1B, 0 0 7rem #FFDD1B, 0 0 8rem #FFDD1B, 0 0 10rem #FFDD1B, 0 0 15rem #FFDD1B;
@@ -7,7 +7,7 @@
     text-shadow: 0 0 0.5rem #fff, 0 0 1rem #fff, 0 0 1.5rem #fff, 0 0 2rem #FFDD1B, 0 0 3.5rem #FFDD1B, 0 0 4rem #FFDD1B, 0 0 5rem #FFDD1B, 0 0 7.5rem #FFDD1B;
   }
 }
-//again for title text blithchron 20
+//again for title text blithchron 20--------------------------------------------------------------
 @keyframes blink {
   40% {
     opacity: 1;
@@ -26,7 +26,7 @@
   }
 }
 
-//for date shake
+//for date shake--------------------------------------------------------------------------------------
 @keyframes shake {
   0% { transform: skewX(-15deg); }
   5% { transform: skewX(15deg); }
@@ -41,7 +41,7 @@
   0% {background-position: 100% -100%}
   }
 
-// for animating nav-links hover
+// for animating nav-links hover------------------------------------------------------------------------
 @keyframes hover-v {
   0% {
       transform: scaleX(0);
@@ -75,3 +75,43 @@
       opacity: .02;
      }
 }
+
+//for skew button------------------------------------------------------------------------
+@keyframes swoosh {
+	0% {
+		transform-origin: left center;
+	}
+	
+	20% {
+		transform: skewX(-20deg) scaleX(1);
+		transform-origin: left center;
+	}
+	
+	21% {
+		transform-origin: right center;
+	}
+	
+	50% {
+		transform: skewX(-20deg) scaleX(0);
+		transform-origin: right center;
+	}
+}
+
+@keyframes fill {
+	0% {
+		background-color: rgba($color-skew-button, 0);
+	}
+	
+	20% {
+		opacity: .5;
+		border-width: 0px;
+		border-color: darken($color-skew-button, 10%);
+	}
+	
+	100% {
+		opacity: .5;
+		border-width: 1px;
+		background-color: rgba($color-skew-button, 0.5);
+	}
+}
+//for skew button ends**

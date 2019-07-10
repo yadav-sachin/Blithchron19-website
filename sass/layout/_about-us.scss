@@ -12,11 +12,11 @@
         height: 31.5rem;
         font-size: 2rem;
         position: relative;
+        @include desktop-respond(md){
+            text-align: center; }
     }
     
     &__description-text{
-        position: absolute;
-        top : 50%;
-        transform: translateY(-50%);
+        margin: 6.5rem 0.5rem;
     }
 }

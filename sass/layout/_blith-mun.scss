@@ -1,14 +1,28 @@
 .blith-mun{
     margin-top: 5rem;
+    // width: 85%;
+    margin-right:auto;
+    margin-left: auto;
+    @include desktop-respond(md){
+        text-align:center;
+    }
 
     &__heading{
         text-align: center;
         margin-top: 1rem;
         margin-bottom: 6rem;
     }
-    
+    &__image-align-helper{
+        display:inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
     &__image{
-        width: 32rem;
+        width: 35rem;
+        vertical-align:middle;
+    }
+    &__image-container{
+        text-align: center;
     }
     
     &__description{
@@ -16,8 +30,28 @@
         position: relative;
     }
 
+    &__description-text{
+        margin-top: 5rem;
+        margin-bottom: 24rem;
+    } 
+
     &__button, &__fb-button{
         font-size: 2rem;
     }
+    &__button{
+        position: absolute;
+        bottom:20%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    &__fb-button{
+        position: absolute;
+        bottom:0;
+        left: 48%;
+        transform: translateX(-50%);
+    }
+    // &__fb-logo{
+    //     font-size: 1.5em;
+    // }
 
 }

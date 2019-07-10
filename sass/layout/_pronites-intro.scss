@@ -26,11 +26,10 @@
     }
 
     &__button{
-        font-size: 2rem;
         border: 1px solid white;
         position: absolute;
-        bottom : 20%;
+        bottom : 15%;
         left: 50%;
-        transform: skewY(7deg) translateX(-50%);
+        transform:translateX(-50%);
     }
 }
