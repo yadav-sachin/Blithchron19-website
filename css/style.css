@@ -33,7 +33,7 @@ body {
   scroll-margin-right: 0.5rem;
   width: 1.5rem; }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right bottom, rgba(192, 24, 25, 0.7), rgba(245, 175, 175, 0.7));
+    background: linear-gradient(to right bottom, rgba(107, 34, 55, 0.7), rgba(215, 130, 154, 0.7));
     border-radius: 1rem; }
   ::-webkit-scrollbar-track {
     background: transparent;
@@ -290,7 +290,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(234, 84, 85, 0.8), rgba(102, 12, 13, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(215, 130, 154, 0.6), #682135), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -339,7 +339,7 @@ body {
 .pronites-intro {
   margin-top: 9rem;
   margin-bottom: 9rem;
-  background-image: linear-gradient(to right bottom, rgba(245, 175, 175, 0.8), rgba(192, 24, 25, 0.8)), url("https://blithchron.iitgn.ac.in/images/home/pronites%20web.jpg");
+  background-image: linear-gradient(to right bottom, rgba(215, 130, 154, 0.8), rgba(107, 34, 55, 0.8)), url("https://blithchron.iitgn.ac.in/images/home/pronites%20web.jpg");
   background-size: cover;
   height: 80vh;
   text-align: center;
