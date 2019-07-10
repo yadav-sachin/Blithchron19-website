@@ -15,10 +15,13 @@
     &__image-align-helper{
         display:inline-block;
         height: 100%;
+        width:0;
         vertical-align: middle;
     }
     &__image{
         width: 35rem;
+        @include desktop-respond(xs)
+        { width: 30rem; }
         vertical-align:middle;
     }
     &__image-container{
@@ -31,7 +34,7 @@
     }
 
     &__description-text{
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-bottom: 24rem;
     } 
 

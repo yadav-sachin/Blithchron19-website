@@ -1,0 +1,55 @@
+.vertical-scroll-text{
+    transform: skewY(7deg)!important;
+    position: absolute;
+    bottom: 24%;
+    left: 47%;
+    transform: translate(-50%, -30%)!important;
+    @include desktop-respond(md)
+    {
+        left: 45%;
+    }
+    @include desktop-respond(sm)
+    {
+        left: 42%;
+    }
+    @include desktop-respond(xs)
+    {
+        left: 39%;
+        bottom: 19%;
+    }
+    // height: 16.0rem;
+    overflow:hidden;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    line-height: 4.0rem;
+    color: #f08a5d;
+
+    &__container {
+    text-align: center;
+    font-weight: 600;
+    overflow: hidden;
+    height: 4.0rem;
+    padding: 0 4rem;
+
+    &__text {
+        display: inline;
+        margin: 0;
+    }
+
+    &__list {
+        margin-top: 0;
+        padding-left: 11.0rem;
+        text-align: left;
+        list-style: none;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+        &__item {
+        line-height:4rem;
+        margin:0;
+        }
+    }
+    }
+}

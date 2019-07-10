@@ -17,7 +17,7 @@ html{
     @include desktop-respond(sm){
         font-size: 52%;
     }
-    @include desktop-respond(sm){
+    @include desktop-respond(xs){
         font-size: 48%;
     }
 }
@@ -27,7 +27,7 @@ body{
     font-family: "Lato",sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: $color-body-text;
     padding: 2rem;
     box-sizing: border-box;
 }

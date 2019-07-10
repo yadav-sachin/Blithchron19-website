@@ -1,21 +1,34 @@
 .events-intro{
-    margin-top: 5rem;
-    background-image: url("https://blithchron.iitgn.ac.in/images/home/panache.jpg");
-    height: 70vh;
+    margin-top: 10rem;
+    background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8),rgba($color-primary-dark,0.8)) , url("https://blithchron.iitgn.ac.in/images/home/panache.jpg");
+    background-size: cover;
+    height: 80vh;
+    text-align:center;
+    padding-top: 9rem;
+    transform: skewY(-7deg);
+    color: white;
+    position: relative;
 
     &__heading{
+        transform: skewY(7deg);
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 0rem;
         margin-bottom: 6rem;
     }
     
     &__description{
+        transform: skewY(7deg);
         font-size: 2rem;
         position: relative;
+        color: rgba(white,0.7);
     }
 
     &__button{
+        transform: skewY(7deg);
         font-size: 2rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
     }
     
 }
