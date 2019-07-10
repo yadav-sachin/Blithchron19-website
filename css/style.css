@@ -468,7 +468,8 @@ body {
   letter-spacing: 0.2rem;
   color: white; }
   .skew-button :focus {
-    outline: 0 !important; }
+    outline-width: 0 !important;
+    outline-color: transparent !important; }
   .skew-button > span {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;

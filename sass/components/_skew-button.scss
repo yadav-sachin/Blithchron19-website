@@ -13,7 +13,8 @@
 	color: white;
 	
     :focus{
-        outline : 0!important;
+        outline-width: 0!important;
+        outline-color: transparent!important;
     }
     // Text
 	> span {
