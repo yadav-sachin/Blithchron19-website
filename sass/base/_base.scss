@@ -35,7 +35,7 @@ body{
 
 ::-webkit-scrollbar {
     scroll-margin-right:0.5rem;  
-    width: 1.5rem;
+    width: 1rem;
 
     &-thumb {
         background: linear-gradient(to right bottom,rgba($color-primary-dark, 0.7),rgba($color-primary-light,0.7));

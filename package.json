@@ -4,7 +4,7 @@
   "description": "Website for Blithchron'20 - the annual college fest of IIT Gandhinagar",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/events.scss css/events.css -w"
   },
   "repository": {
     "type": "git",
