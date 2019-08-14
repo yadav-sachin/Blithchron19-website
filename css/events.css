@@ -361,6 +361,9 @@ body {
     width: 15rem;
     height: auto; }
 
+.events {
+  margin-top: 8rem; }
+
 .special-button {
   outline: none !important;
   border: none !important;
@@ -502,3 +505,18 @@ body {
       .vertical-scroll-text__container__list__item {
         line-height: 4rem;
         margin: 0; }
+
+.blith-event-card {
+  background-color: transparent !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  margin-top: 2rem; }
+
+.card-body {
+  font-size: 1.5rem; }
+
+.card-title {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.7); }
+
+.card a {
+  font-size: 1.5rem; }
