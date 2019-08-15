@@ -28,8 +28,10 @@ body{
     font-weight: 400;
     line-height: 1.7;
     color: $color-body-text;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     box-sizing: border-box;
+    margin-bottom: -500px; 
+    // overflow-y: hidden;
 }
 
 

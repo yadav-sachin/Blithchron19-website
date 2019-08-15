@@ -32,12 +32,14 @@ function start()
     var x= setInterval(showTime,60000);
     $(".title").lettering();
     $(".button").lettering();
+    var nv = $(".navigation");
+    var nvi = $(".navigation__icon");
     $(".header__logo").hover(function(){
         $(this).addClass("animated rubberBand");},function(){
         $(this).removeClass("animated rubberBand");});
     $(".navigation__button").click( function() { 
-        $(".navigation").toggleClass("navigation--overlay");
-        $(".navigation__icon").toggleClass("navigation__icon--overlay");
+        nv.toggleClass("navigation--overlay");
+        nvi.toggleClass("navigation__icon--overlay");
     });
     setTimeout(function(){ $(".heading-primary--main").addClass("neon-title"); }, 3000);
     setTimeout(function(){ $(".countdown p").addClass("countdown-shake"); }, 3500);
