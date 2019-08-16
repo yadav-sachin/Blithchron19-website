@@ -5,18 +5,13 @@
   }
 }
 .footer {
-  &-inner{
-    transform: skewY(7deg);
-  }
-  // padding-bottom: 4rem;
-  transform: skewY(-7deg);
   $yellow-color: #ffa260;
   background-color: #333;
   margin-top: 5rem;
-  padding: 10rem 0 15rem;
+  padding: 10rem 0 0;
   font-size: 1.4rem;
   text-align: center;
-  // clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
   &__heading{
     margin-top: 5rem;
   }
