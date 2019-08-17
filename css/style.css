@@ -28,6 +28,9 @@ body {
   color: rgba(255, 255, 255, 0.5);
   padding: 2rem;
   box-sizing: border-box; }
+  @media (max-width: 767.98px) {
+    body {
+      padding: 0; } }
 
 ::-webkit-scrollbar {
   scroll-margin-right: 0.5rem;

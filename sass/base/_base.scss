@@ -30,6 +30,10 @@ body{
     color: $color-body-text;
     padding: 2rem;
     box-sizing: border-box;
+    @include desktop-respond(sm)
+    {
+        padding : 0;
+    }
 }
 
 
