@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/yadav-sachin/Blithchron19-website#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
